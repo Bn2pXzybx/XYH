@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zbaohuang.fragment.EvaluatorFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="爱心评估"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/radarChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:text="爱心总结"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:background="#cdcdcd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:text="在饮食健康方面，可以看出您非常注重对父母健康饮食的注意，这个做得非常不错，但在理解父母，与父母沟通方面却不是做得很好。"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</LinearLayout>
