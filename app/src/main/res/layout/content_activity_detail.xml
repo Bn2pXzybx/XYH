@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zbaohuang.activity.ActivityDetailActivity"
+    tools:showIn="@layout/activity_activity_detail">
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center_vertical"
+            android:text="活动名称:国家公益话剧表演"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center_vertical"
+            android:text="活动时间:2016-03-30 19:00-21:00"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="#ededed">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:paddingLeft="15dp"
+            android:textSize="15sp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center_vertical"
+            android:text="活动介绍："/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cdcdcd"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text=" 故事从七个人的对话中拉开帷幕，大家起初都不知道身处何处，直至混乱之后，大家都被注射了镇定剂或电击再苏醒，才能安静下来思考问题。就像有时，我们每人也需要这剂镇定剂或电击一样。在故事的最后，你才会知道，谁才是真正的疯子！疯子，在医学上称为精神病，是精神异常者。从本质来说是大脑放电异常。看过之后，或许你会怀疑，你自己也是这个房间里的“疯子”。"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryText"/>
+
+</LinearLayout>
