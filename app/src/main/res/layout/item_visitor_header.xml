@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/headerDatetimeTextView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="13sp"
+        android:layout_centerVertical="true"
+        android:text="30日03月"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_toLeftOf="@+id/visitorCountTextView"
+        android:background="@android:color/holo_red_dark"
+        android:layout_toRightOf="@+id/headerDatetimeTextView"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/visitorCountTextView"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="访客数：30"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+
+</RelativeLayout>
