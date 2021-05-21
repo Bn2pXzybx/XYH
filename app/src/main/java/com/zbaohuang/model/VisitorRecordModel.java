@@ -36,11 +36,12 @@ public class VisitorRecordModel {
     public int getIntDateTime(){
         try {
             Date date = DateUtils.stringToDate(this.datetime,"yyyy-MM-dd");
-            return (int)date.getTime();
+            String result = DateUtils.dateToString(date, "yyyymmdd");
+            return Integer.parseInt(result);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return 1;
+        return -1;
     }
 
     public String getDate(){

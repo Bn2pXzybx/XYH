@@ -11,7 +11,7 @@
         android:background="#cdcdcd"
         android:layout_marginLeft="50dp"/>
 
-    <ListView
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
         android:id="@+id/listView"
         android:divider="@null"
         android:background="@android:color/transparent"

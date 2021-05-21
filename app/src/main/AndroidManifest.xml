@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.zbaohuang.xyh">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,6 +24,10 @@
         <activity
             android:name="com.zbaohuang.activity.ActivityDetailActivity"
             android:label="@string/title_activity_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.VolunteerActivity"
+            android:label="@string/title_activity_volunteer"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

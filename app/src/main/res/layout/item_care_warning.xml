@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/demo_picture_taiji"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="红红助手"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/datetimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间：2016-03-23 12:10-13:10"
+            android:textSize="13sp"
+            android:textColor="@color/colorSecondText"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动简介:亲爱的黄先生，刚刚系统监测到家中有人摔倒了，请你及时查看并处理，以免意外发生..."
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:background="@drawable/bg_gary_round"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alertTextView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimaryText"
+                android:text="给父母挑件温馨的礼物吧"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/demo_small_picture"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/demo_small_picture"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/demo_small_picture"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
