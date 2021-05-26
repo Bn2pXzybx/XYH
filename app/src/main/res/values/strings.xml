@@ -10,4 +10,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_activity_detail">ActivityDetailActivity</string>
     <string name="title_activity_volunteer">VolunteerActivity</string>
+    <string name="title_activity_device_manager">DeviceManagerActivity</string>
+    <string name="title_activity_device_detail">DeviceDetailActivity</string>
+    <string name="title_activity_binding_device">BindingDeviceActivity</string>
 </resources>

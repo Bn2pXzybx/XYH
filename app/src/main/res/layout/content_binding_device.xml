@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zbaohuang.activity.BindingDeviceActivity"
+    tools:showIn="@layout/activity_binding_device">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:text="设备信息:"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryText"
+        android:gravity="center_vertical"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="5dp"
+        android:background="#cdcdcd"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line1">
+
+        <TextView
+            android:id="@+id/alertTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="绑定人"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="爸爸"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/nameLayout"
+        android:layout_marginTop="5dp"
+        android:background="#cdcdcd"/>
+
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="20dp"
+        android:text="当前连接设备:"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryText"
+        android:gravity="center_vertical"/>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textview2"
+        android:layout_marginTop="5dp"
+        android:background="#cdcdcd"/>
+
+    <RelativeLayout
+        android:id="@+id/deviceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/line4">
+
+        <TextView
+            android:id="@+id/alertTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="设备名称"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/deviceNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryText"
+            android:text="智能手表"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/deviceLayout"
+        android:layout_marginTop="5dp"
+        android:background="#cdcdcd"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_red_selector"
+        android:layout_below="@+id/line3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="确认绑定设备"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryText"/>
+
+</RelativeLayout>

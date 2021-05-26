@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/datetimeText"
+        android:text="13:20"
+        android:layout_toRightOf="@+id/line1"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/line1"
+        android:src="@mipmap/demo_picture_taiji"/>
+
+    <TextView
+        android:id="@+id/attTextView"
+        android:text="13:20"
+        android:layout_toLeftOf="@+id/imageView"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

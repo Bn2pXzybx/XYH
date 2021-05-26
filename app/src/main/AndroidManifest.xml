@@ -28,6 +28,18 @@
         <activity
             android:name="com.zbaohuang.activity.VolunteerActivity"
             android:label="@string/title_activity_volunteer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.DeviceManagerActivity"
+            android:label="@string/title_activity_device_manager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.DeviceDetailActivity"
+            android:label="@string/title_activity_device_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.BindingDeviceActivity"
+            android:label="@string/title_activity_binding_device"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
