@@ -14,13 +14,7 @@
         <activity
             android:name="com.zbaohuang.activity.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name="com.zbaohuang.activity.ActivityDetailActivity"
             android:label="@string/title_activity_activity_detail"
@@ -38,9 +32,43 @@
             android:label="@string/title_activity_device_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name="com.zbaohuang.activity.VideoDetailActivity"
+            android:label="@string/title_activity_device_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.zbaohuang.activity.BindingDeviceActivity"
             android:label="@string/title_activity_binding_device"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.AddVideoActivity"
+            android:label="@string/title_activity_binding_device"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.VideoManagerActivity"
+            android:label="@string/title_activity_video_manager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.zbaohuang.activity.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.zbaohuang.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zbaohuang.activity.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="io.vov.vitamio.activity.InitActivity"/>
     </application>
 
 </manifest>

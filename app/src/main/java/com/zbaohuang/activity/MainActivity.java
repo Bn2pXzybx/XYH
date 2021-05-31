@@ -33,6 +33,8 @@ import com.zbaohuang.xyh.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.vov.vitamio.LibsChecker;
+
 public class MainActivity extends AppCompatActivity{
 
     private ListView menuListView;
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LibsChecker.checkVitamioLibs(this);
         initData();
         initView();
 

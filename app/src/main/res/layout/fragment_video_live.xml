@@ -1,8 +1,127 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.zbaohuang.fragment.VideoLiveFragment">
 
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#ffcdcdcd"/>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/line"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/talkButton"
+            android:layout_toRightOf="@+id/line"
+            android:layout_width="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抓拍"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/captureButton"
+            android:layout_alignRight="@+id/captureButton"
+            android:layout_below="@+id/captureButton"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对讲"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/talkButton"
+            android:layout_alignRight="@+id/talkButton"
+            android:layout_below="@+id/captureButton"
+            android:textColor="@color/colorPrimaryText"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPrimaryText"
+        android:text="客厅"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/demo_picture_taiji"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/demo_picture_taiji"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/demo_picture_taiji"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/demo_picture_taiji"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cdcdcd"/>
+
+</LinearLayout>
